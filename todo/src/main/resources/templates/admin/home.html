@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>Admin Page</title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/home.css}" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" th:src="@{/js/script.js}"></script>
+</head>
+
+<body>
+	<div class="container">
+
+		<form th:action="@{/logout}" method="get">
+			<button class="btn btn-md btn-danger btn-block" name="registration"
+				type="Submit">Logout</button>
+		</form>
+
+		<div class="panel-group" style="margin-top: 40px">
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<span th:utext="${userName}"></span>
+				</div>
+				<div class="panel-body">
+				<p class="admin-message-text text-center" th:utext="${adminMessage}"></p>
+					<table class="table">
+						<tr>
+							<th>Title</th>
+							<th>Description</th>
+							<th>Action</th>
+						</tr>
+						<tr th:each="item: ${items}">
+							<td th:text="${item.title}"></td>
+							<td th:text="${item.name}"></td>
+							<td><span><a
+									th:href="@{'/admin/home/list/' + ${item.id}}">Edit</a></span> <span><a
+									id="deleteToDoItem" href="javascript:void(0);"
+									th:attr="data-value=${item.id}">Delete</a></span></td>
+						</tr>
+					</table>
+				</div>
+				
+				<span class="btn btn-md btn-danger "><a th:href="@{'/admin/home/create'}">Create</a></span>
+			</div>
+		</div>
+		
+		
+		<div></div>
+
+	</div>
+</body>
+</html>
