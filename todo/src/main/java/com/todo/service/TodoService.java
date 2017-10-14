@@ -1,9 +1,9 @@
-package com.todo.todo.service;
+package com.todo.service;
 
 import java.util.List;
 
-import com.todo.todo.model.User;
-import com.todo.todo.todolist.TodoItem;
+import com.todo.model.User;
+import com.todo.todolist.TodoItem;
 
 public interface TodoService {
 

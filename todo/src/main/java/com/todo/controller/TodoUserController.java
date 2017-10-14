@@ -1,4 +1,4 @@
-package com.todo.todo.controller;
+package com.todo.controller;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -15,10 +15,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.todo.todo.model.User;
-import com.todo.todo.service.TodoService;
-import com.todo.todo.service.UserService;
-import com.todo.todo.todolist.TodoItem;
+import com.todo.model.User;
+import com.todo.service.TodoService;
+import com.todo.service.UserService;
+import com.todo.todolist.TodoItem;
 
 @Controller
 @RequestMapping("/admin/home")

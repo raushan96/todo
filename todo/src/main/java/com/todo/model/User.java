@@ -1,4 +1,4 @@
-package com.todo.todo.model;
+package com.todo.model;
 
 import java.util.Set;
 

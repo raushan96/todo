@@ -1,4 +1,4 @@
-package com.todo.todo.configuration;
+package com.todo.configuration;
 
 import javax.sql.DataSource;
 

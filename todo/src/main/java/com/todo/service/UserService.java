@@ -1,6 +1,6 @@
-package com.todo.todo.service;
+package com.todo.service;
 
-import com.todo.todo.model.User;
+import com.todo.model.User;
 
 public interface UserService {
 

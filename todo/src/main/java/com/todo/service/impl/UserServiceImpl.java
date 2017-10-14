@@ -1,4 +1,4 @@
-package com.todo.todo.service.impl;
+package com.todo.service.impl;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -7,11 +7,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.todo.todo.model.Role;
-import com.todo.todo.model.User;
-import com.todo.todo.repository.RoleRepository;
-import com.todo.todo.repository.UserRepository;
-import com.todo.todo.service.UserService;
+import com.todo.model.Role;
+import com.todo.model.User;
+import com.todo.repository.RoleRepository;
+import com.todo.repository.UserRepository;
+import com.todo.service.UserService;
+
+
 
 @Service("userService")
 public class UserServiceImpl implements UserService {

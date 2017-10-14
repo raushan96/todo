@@ -1,8 +1,8 @@
-package com.todo.todo.todolist;
-
-import com.todo.todo.model.User;
+package com.todo.todolist;
 
 import javax.persistence.*;
+
+import com.todo.model.User;
 
 @Entity
 @Table(name = "todo_item")

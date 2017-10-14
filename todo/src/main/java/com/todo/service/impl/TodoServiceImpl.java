@@ -1,14 +1,14 @@
-package com.todo.todo.service.impl;
+package com.todo.service.impl;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.todo.todo.model.User;
-import com.todo.todo.repository.TodoItemRepository;
-import com.todo.todo.service.TodoService;
-import com.todo.todo.todolist.TodoItem;
+import com.todo.model.User;
+import com.todo.repository.TodoItemRepository;
+import com.todo.service.TodoService;
+import com.todo.todolist.TodoItem;
 
 @Service("todoService")
 public class TodoServiceImpl implements TodoService {
