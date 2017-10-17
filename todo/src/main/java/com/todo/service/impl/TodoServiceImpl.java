@@ -18,16 +18,12 @@ public class TodoServiceImpl implements TodoService {
 
 	@Override
 	public List<TodoItem> findAll(User owner) {
-		// TODO Auto-generated method stub
+		
 		
 		return todoItemRepository.findByOwner(owner);
 	}
 
-	@Override
-	public void save(TodoItem todoItem) {
-		// TODO Auto-generated method stub
-
-	}
+	
 
 	@Override
 	public void update(TodoItem todoItem) {
@@ -44,7 +40,7 @@ public class TodoServiceImpl implements TodoService {
 
 	@Override
 	public TodoItem getByID(int id) {
-		// TODO Auto-generated method stub
+		
 		return todoItemRepository.findTodoItemById(id);
 	}
 

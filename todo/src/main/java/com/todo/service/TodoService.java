@@ -8,10 +8,8 @@ import com.todo.todolist.TodoItem;
 public interface TodoService {
 
 	public List<TodoItem> findAll(User owner);
-	
-	public  TodoItem getByID(int id);
 
-	public void save(TodoItem todoItem);
+	public TodoItem getByID(int id);
 
 	public void update(TodoItem todoItem);
 
